@@ -1,0 +1,276 @@
+.camera_prev:hover, .camera_next:hover, 
+#slider1 .buttons:hover,
+.serve-hover span:hover, 
+#slider2 .buttons:hover,
+.main-page-tabs .nav li.active a, 
+#menu ul li ul > li:hover,
+.days li.active:after, 
+#search-form .search-submit,
+.doc-time:hover .doc-details,
+.accordians li h3:first-child:hover:before,
+.type4 .nav li.active a,
+.onhover a:hover,
+.client-meta > span,
+.serve-hover a:hover,
+.progress.indivisual .bar,
+.our-service h2 i,
+.error-404:before,
+header:before,
+#menu.menu2 ul li:hover > a,
+.service-block .span4:hover > h3:before,
+.service-block .span4:hover > h3:after,
+.main-title h1:before,
+.intro-box-title > h2:after,
+.performance .progress .bar,
+.accordions dt a,
+.fill,
+.donate-updown,
+#pager2 a.selected span ,
+.team-modern,
+.menu-strip,
+.open-header,
+.donate,
+.sidebar-tabs .nav li.active a,
+.pagination ul > li > a:hover,
+.likes:hover,
+.doctors-time > a,
+.checkout-block-content > input[type="submit"],
+.blog-post-date,
+.years:before,
+.years:hover:after,
+.social-icons ul li a:hover,
+.appointment-box:before,
+.appointbox-top, .appointbox-bottom,
+.datepick-nav, .datepick-ctrl,
+.news-img > span:before,
+.give-donation > a,
+.logo-carousel .owl-buttons > div:hover,
+.tab-icons li.active a .tab-icon,
+.gallery-image:before,
+.creative-news-img > span:before,
+.header-social li a:hover,
+.menu-btn,
+.portfolio-img:before,
+.portfolio-img > a,
+.menu-post-img > span:before,
+.spa-slide-subtitle:before
+{
+	background-color: #663141;
+}
+.sidebox-head, 
+.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, 
+.contact-form form .submit:hover, 
+.skill-left > h4:after,
+.blog-post-views,
+#slider3 .buttons:hover,
+.team-grid-title > span,
+.gallery-column:hover .img-title,
+.bottom-footer ul,
+.bottom-footer:After,
+#menu.menu2 li ul li > a:after,
+.service-hover,
+.col-title h2:after,
+.why-us dt a.activate:before ,
+.sidebar-widget ul .sub-list,
+.product-single-page a:hover,
+.header2 #menu > ul > li:hover > a,
+.testimonial .nav.nav-tabs li a > div:after,
+.testimonial .nav.nav-tabs li a > div:before,
+.top-bar:before,
+.option-combo .option-set li a.selected
+{
+	background-color: #935467;
+}
+header,
+.slider-area, 
+#slider1 .overview li:hover,
+.doc:hover .caption, 
+.gallery-item:hover:after,
+.our-service > p,
+.recent-event-img:hover,
+.post-intro,
+.team-list-desc h2,
+.team-list-img:hover,
+.gallery-column:hover,
+.post-gallery,
+.toggle-img:after,
+.toggle-img:before,
+.toggle-title,
+.service-block .span4:hover > h3,
+.simple-title,
+.staff-member-img > ul li a:hover,
+.option-combo .option-set li a.selected
+{
+	border-color:#935467;
+}
+.testimonials,
+.blog-list-img:hover,
+.post-image,
+.post-video,
+.flickr-images > a:hover,
+.team-member:hover .contact-bar,
+#menu.menu2 li ul  li  ul li:hover a,
+#menu.menu2 li ul  li:hover > a ,
+.give-donation > a,
+.logo-carousel .owl-buttons > div:hover,
+.header-social li a:hover
+{
+	border-color:#663141;
+}
+.triangle-design, 
+#slider2 .overview li:hover .triangle-design,
+.type3 .nav li.active a,
+.mCSB_dragger_bar:before,
+.blog-list-date,
+.doc:hover,
+.star li.fill, 
+.star li.fill:before,
+.star li.fill:after,
+.team-img
+{
+	border-bottom-color:#935467;
+}
+#menu ul li ul,
+.aboutus .nav li.active a,
+.gallery-tabs .nav li.active a, 
+.gallery-tabs .nav li.active a:hover,
+.gallery-tabs .nav li a:hover,
+.pricing ul:hover .price-head:after,
+.bottom-footer ul:before,
+.controls li.active,
+.tab-icons li a .tab-icon:before
+{
+	border-top-color:#935467;
+}
+.tab-post:hover,
+.viewall:before
+{
+	border-left-color:#935467;
+}
+#menu li:hover > a, 
+.speciality, 
+ul.round li.roundabout-in-focus h3
+,#tweets li h5, 
+.star, 
+.continue,
+.continue:hover,
+.tabpost-detail > p a:hover,
+.tag-clouds > a:hover,
+.replies,
+.reply,
+.member-name > span,
+.type3 .nav li.active a,
+.readmore:hover,
+.error-404 h1 span,
+#menu.menu2 li ul  li  ul li:hover a,
+#menu.menu2 li ul  li:hover > a,
+.post-details h2 a:hover,
+.abt-client > p,
+.caption > h5:first-child,
+a,a:hover,
+.sidebar-widget .viewall,
+.records li span,
+.business-block h4 a:hover,
+.business-block .accordions dt a:before,
+.business-block .accordions dt a.activate,
+.team-title h2,
+.services-modern .span4:hover i, 
+.services-modern .span4:hover h3,
+.recent-event-desc h2 a,
+.staff-member-img > ul li a:hover i,
+.simple-service > span,
+.simple-service > h3 a:hover,
+.staff-detail > span,
+.staff-detail > h3 a:hover,
+.testimonial-details h4 span,
+.recent-news > h3 a:hover,
+.modern-service > h3 a:hover,
+.modern-service > span,
+.search-doctor h3 span,
+.search-details ul li  a:hover,
+.give-donation > span,
+.give-donation > a:hover,
+.toggle-item.activate > h2,
+.welcome-sec > h2 span,
+.package-detail h4 span,
+.fancy-header #menu > ul > li > a:hover,
+.review-info > h5,
+.fancy-title > h2,
+.tip > span,
+.side-header #menu ul li.opened > a,
+.side-header #menu li ul li:hover > a,
+.side-header #menu li ul li ul li:hover > a,
+.header-social li a,
+.simple-text > h3 span,
+.simple-text h4,
+.price ins,
+.option-combo .option-set li a.selected span,
+.portfolio-detail > h3 a:hover,
+header #menu .mega-menu ul li:hover > a,
+#menu .menu-post > a,
+.menu-blog > span,
+#menu .menu-blog > h3 a:hover,
+#menu .cats > a:hover,
+.spa-slide-title span,
+.medical-slide-subtitle,
+.spa-slide-title2 span,
+.slide-big-title span
+ {
+	color:#663141;
+}
+.slogan, 
+#slider2 .overview li:hover h4, 
+.main-page-tabs .tab-content .days li.active a, 
+.footer-title > span,
+.published-date .blue,
+.service-doc .details span,
+.aboutus .nav li.active a,
+.sidebar-widget-title span,
+.main-title span,
+.blog-list-desc h3:hover a,
+.grid-view h3:hover a,
+#slider3 .overview li h6 a:hover,
+.recent-event-desc h2:hover a,
+.tag-clouds > h4,
+.comment-details > h6,
+.readmore:hover ,
+.days li.active a,
+.days li.active a:focus,
+.days li.active a:hover,
+.staff-desc h3,
+.tip > h3 a:hover,
+.traditional-service h3 a:hover,
+.creative-news > h3 a:hover
+{
+	color:#935467;
+}
+.coloured {
+	color:#935467;
+}
+.img-title,
+.post-img:after,
+.video-title,
+.team-intro,
+.product-img > a:hover,
+.portfolio-style-img:before
+{
+	background-color:rgba(102, 49, 65, 0.9);
+	
+}
+
+.continue {
+    background:url("../img/cont-read-chocolate.png") no-repeat scroll 0 center transparent;
+}
+.views-icons a{
+	background-image:url("../img/list-grid-view-chocolate.png");
+}
+.recent-event-links > a{
+	background:url("../img/recent-events-link-chocolate.png") no-repeat 0 1px transparent;
+}
+.pricing li {
+	background:url("../img/list-icon-chocolate.png") no-repeat 35px center #F9F8F8;
+}
+.pricing ul:hover .price-head, .pricing ul:hover .subscribe button,
+.performance .progress .bar {
+	background:url("../img/pricing-hover-chocolate.png") repeat 0 0 transparent;
+}

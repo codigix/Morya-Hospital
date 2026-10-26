@@ -1,0 +1,61 @@
+# Moraya Multispeciality Charitable Hospital
+# Robots.txt – SEO + AI Search / GEO friendly
+# Website: https://morayamultispecialitycharitablehospital.com/
+
+# Allow all standard search engine crawlers
+User-agent: *
+Allow: /
+
+# Google Search
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+ 
+User-agent: Googlebot-Image
+Allow: /
+
+ 
+User-agent: Bingbot
+Allow: /
+
+ 
+User-agent: OAI-SearchBot
+Allow: /
+ 
+User-agent: GPTBot
+Allow: /
+
+ 
+User-agent: ChatGPT-User
+Allow: /
+
+ 
+User-agent: Claude-SearchBot
+Allow: /
+
+ 
+User-agent: Claude-User
+Allow: /
+
+ 
+User-agent: ClaudeBot
+Allow: /
+
+ 
+User-agent: PerplexityBot
+Allow: /
+
+ 
+User-agent: Perplexity-User
+Allow: /
+
+# Keep important SEO assets crawlable
+User-agent: *
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Sitemap
+Sitemap: https://morayamultispecialitycharitablehospital.com/sitemap.xml
