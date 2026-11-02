@@ -485,7 +485,7 @@
                 bannerContainer.style.background = `url(${blog.bannerBg}) no-repeat 100%`;
             }
             document.getElementById('bannerTitle').innerText = blog.bannerTitle || title;
-            document.getElementById('breadcrumbTitle').innerText = blog.breadcrumbTitle || title;
+            document.getElementById('breadcrumbTitle').innerText = blog.breadcrumbTitle || (blog.slug || blog.id || title).replace(/\.html$/, '');
 
             // Featured Image
             const imgEl = document.getElementById('featuredImage');
