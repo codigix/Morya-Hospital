@@ -479,6 +479,10 @@
             const metaKwEl = document.getElementById('metaKeywords');
             if (metaKwEl) metaKwEl.setAttribute('content', keywords);
 
+            // Schema (JSON-LD): optional "schema" field in blogs.json - an object, an array of objects,
+            // or the pasted ld+json script tag text
+            injectSchema(blog.schema);
+
             // Banner
             const bannerContainer = document.getElementById('bannerContainer');
             if (bannerContainer && blog.bannerBg) {
@@ -539,6 +543,22 @@
             // Hide loading, show content
             document.getElementById('blogLoading').style.display = 'none';
             document.getElementById('blogContentWrapper').style.display = 'block';
+        }
+
+        function injectSchema(schema) {
+            if (!schema) return;
+            let data = schema;
+            if (typeof schema === 'string') {
+                const raw = schema.replace(/<\/?script[^>]*>/gi, '').trim();
+                try { data = JSON.parse(raw); } catch (e) { console.error('Invalid blog schema JSON', e); return; }
+            }
+            const old = document.getElementById('blogSchema');
+            if (old) old.remove();
+            const el = document.createElement('script');
+            el.type = 'application/ld+json';
+            el.id = 'blogSchema';
+            el.text = JSON.stringify(data);
+            document.head.appendChild(el);
         }
 
         function renderRecentBlogs(blogs) {

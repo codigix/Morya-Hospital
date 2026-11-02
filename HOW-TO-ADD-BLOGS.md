@@ -27,6 +27,7 @@ Add your new blog at the top of the array:
   "metaTitle": "SEO Title Here | Moraya Hospital Chinchwad",
   "metaDescription": "SEO meta description under 160 characters...",
   "keywords": "keyword 1, keyword 2, Moraya Hospital, Chinchwad, PCMC",
+  "schema": {"@context": "https://schema.org", "@type": "Article", "headline": "My New Treatment Title Here"},
   "content": "<h2>Introduction</h2><p>Your full blog HTML content goes here...</p>",
   "faqs": [
     {
@@ -56,3 +57,10 @@ or
 npm run sitemap
 ```
 
+
+
+## Adding schema (JSON-LD) to a blog
+
+Add an optional `"schema"` field to the blog in `data/blogs.json`. The blog page injects it into `<head>` as `<script type="application/ld+json">` automatically.
+The value can be a JSON object, an array of objects, or the pasted `<script type="application/ld+json">...</script>` text as a string (escape the quotes).
+Blogs without a `schema` field get no schema.
