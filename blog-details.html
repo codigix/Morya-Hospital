@@ -498,7 +498,9 @@
             document.getElementById('blogCategory').innerText = blog.category || 'Healthcare';
 
             // Content
-            document.getElementById('articleBody').innerHTML = blog.content || '<p>' + (blog.excerpt || '') + '</p>';
+            // The heading is shown in the banner only, so drop any leading <h1> from the article body
+            const bodyHtml = (blog.content || '<p>' + (blog.excerpt || '') + '</p>').replace(/^\s*<h1[^>]*>[\s\S]*?<\/h1>\s*/i, '');
+            document.getElementById('articleBody').innerHTML = bodyHtml;
 
             // FAQs
             const faqSection = document.getElementById('faqSection');
