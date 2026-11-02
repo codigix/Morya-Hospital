@@ -1,0 +1,15 @@
+{
+  "name": "morya-hospital-website",
+  "version": "1.0.0",
+  "description": "Moraya Multispeciality Charitable Hospital Website",
+  "scripts": {
+    "sitemap": "node scripts/update-sitemap-dynamic.js"
+  },
+  "keywords": [
+    "hospital",
+    "blogs",
+    "pcmc"
+  ],
+  "author": "Codigix",
+  "license": "ISC"
+}
