@@ -23,7 +23,7 @@
     box-sizing: border-box; 
 }
 .minict_wrapper:after {
-    background: url("../img/down-arrow.png") no-repeat scroll center center #EDEDED;
+    background: url("../img/down-arrow.webp") no-repeat scroll center center #EDEDED;
     color: #7C7C7C;
     content: "";
     display: block;

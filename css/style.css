@@ -83,7 +83,7 @@ h6 {
 	height: 15px;
 	display: inline-block;
 	padding-right: 10px;
-	background: url("../img/sprites.png") no-repeat 0 0 transparent;
+	background: url("../img/sprites.webp") no-repeat 0 0 transparent;
 	vertical-align: text-top;
 
 	-webkit-transition: all 0.2s ease 0s;
@@ -786,7 +786,7 @@ section {
 	width: 25px;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	background: url("../img/img-icon.png") no-repeat 0 0 transparent;
+	background: url("../img/img-icon.webp") no-repeat 0 0 transparent;
 
 	position: absolute;
 	left: 20%;
@@ -1137,7 +1137,7 @@ section {
 	width: 100%;
 	height: 30%;
 	content: "";
-	background: url("../img/serve-img-hover.png") repeat 0 0;
+	background: url("../img/serve-img-hover.webp") repeat 0 0;
 	opacity: 0;
 	border-top: 1px solid;
 
@@ -1160,7 +1160,7 @@ section {
 	width: 100%;
 	height: 30%;
 	content: "";
-	background: url("../img/serve-img-hover.png") repeat 0 0;
+	background: url("../img/serve-img-hover.webp") repeat 0 0;
 	opacity: 0;
 	border-bottom: 1px solid;
 
@@ -1184,7 +1184,7 @@ section {
 	height: 40px;
 	margin-top: 5px;
 	float: left;
-	background-image: url("../img/toggle-icon.png");
+	background-image: url("../img/toggle-icon.webp");
 	background-size: 140px auto;
 	vertical-align: text-top;
 	position: absolute;
@@ -1450,7 +1450,7 @@ section {
 	margin-top: 44px;
 	padding: 12px 0;
 	text-align: center;
-	background: url("../img/donate-btn.jpg") repeat 0 0 transparent;
+	background: url("../img/donate-btn.webp") repeat 0 0 transparent;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -1561,7 +1561,7 @@ header select {
 	color: #333;
 	line-height: 10px;
 	text-decoration: none;
-	background: url("../img/menu-borders.png") no-repeat 0 -8px;
+	background: url("../img/menu-borders.webp") no-repeat 0 -8px;
 
 	-webkit-transition: padding 0.5s ease 0s;
 	-moz-transition: padding 0.5s ease 0s;
@@ -1652,7 +1652,7 @@ header {
 }
 
 .double-drop {
-	background: url("../img/menu-pointer.png") no-repeat 230px -200px;
+	background: url("../img/menu-pointer.webp") no-repeat 230px -200px;
 	position: relative;
 
 	-webkit-transition: all 0.5s ease 0s;
@@ -1889,7 +1889,7 @@ header {
 }
 
 .back-shadow {
-	/* background: url("../img/resource/slide2-shadow.png") no-repeat scroll 0 0 / cover transparent;
+	/* background: url("../img/resource/slide2-shadow.webp") no-repeat scroll 0 0 / cover transparent;
 	display: inline-block;
 	margin-bottom: -28px;
 	margin-top: -25px;
@@ -2097,7 +2097,7 @@ header {
 }
 
 .slide4-style {
-	background: url("../img/resource/slide4-bg.png") repeat scroll 0 0 transparent;
+	background: url("../img/resource/slide4-bg.webp") repeat scroll 0 0 transparent;
 	height: 362px;
 	position: absolute;
 	right: 70px;
@@ -2210,7 +2210,7 @@ header {
 .camera_next {
 	height: 65px;
 	width: 65px;
-	background: url(../img/slider-arrow.png) no-repeat 0 0 #5D5D5D;
+	background: url(../img/slider-arrow.webp) no-repeat 0 0 #5D5D5D;
 	-webkit-transition: all 0.4s ease 0s;
 	-moz-transition: all 0.4s ease 0s;
 	-ms-transition: all 0.4s ease 0s;
@@ -2338,7 +2338,7 @@ header {
 	font-family: "Montserrat", sans-serif;
 	;
 	color: #656565;
-	background: url("../img/shadow.png") no-repeat center 0 / 100% auto #F9F9F9;
+	background: url("../img/shadow.webp") no-repeat center 0 / 100% auto #F9F9F9;
 }
 
 .figcaption h3 {
@@ -2498,13 +2498,13 @@ header {
 }
 
 #serve .link {
-	background-image: url("../img/link.png");
+	background-image: url("../img/link.webp");
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
 
 #serve .magnify {
-	background-image: url("../img/magnify.png");
+	background-image: url("../img/magnify.webp");
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
@@ -2622,7 +2622,7 @@ header {
 	text-indent: -999em;
 	height: 42px;
 	width: 44px;
-	background: url("../img/carousel-arrows.png") no-repeat 0 0 #5E5E5E;
+	background: url("../img/carousel-arrows.webp") no-repeat 0 0 #5E5E5E;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -2651,11 +2651,11 @@ header {
 }
 
 .pattern1 {
-	background: url("../img/pattern1.png") repeat 0 0;
+	background: url("../img/pattern1.webp") repeat 0 0;
 }
 
 .pattern2 {
-	background: url("../img/pattern2.jpg") repeat 0 0;
+	background: url("../img/pattern2.webp") repeat 0 0;
 }
 
 #slider2 .overview li {
@@ -2696,7 +2696,7 @@ header {
 #slider2 .overview li:hover {
 	height: 336px;
 	margin-top: -5px;
-	background-image: url("../img/services.html"), url("../img/services-hover.png");
+	background-image: url("../img/services.html"), url("../img/services-hover.webp");
 	background-repeat: no-repeat, repeat;
 	background-position: right bottom, 0 0;
 	background-color: #f1f1f1;
@@ -2720,7 +2720,7 @@ header {
 	float: left;
 	opacity: 1;
 	filter: alpha(opacity=100);
-	background: url("../img/services-shadow.png") no-repeat 10px -1px/ 100% auto;
+	background: url("../img/services-shadow.webp") no-repeat 10px -1px/ 100% auto;
 	-webkit-transition: all 0.2s ease 0.2s;
 	-moz-transition: all 0.2s ease 0.2s;
 	-ms-transition: all 0.2s ease 0.2s;
@@ -2759,7 +2759,7 @@ header {
 .hexagon {
 	height: 34%;
 	width: 40%;
-	background: url("../img/hexagon.png") repeat 0 0 / 100% 100%;
+	background: url("../img/hexagon.webp") repeat 0 0 / 100% 100%;
 	text-align: center;
 
 	position: absolute;
@@ -2837,7 +2837,7 @@ header {
 	float: left;
 	height: 65px;
 	width: 65px;
-	background: url("../img/slider-arrow.png") no-repeat 0 0 #5D5D5D;
+	background: url("../img/slider-arrow.webp") no-repeat 0 0 #5D5D5D;
 
 	position: absolute;
 	top: 35%;
@@ -2950,7 +2950,7 @@ header {
 	height: 20px;
 	width: 100%;
 	position: relative;
-	background: url("../img/tab-shadow.png") repeat 0 0 / 100% 100%;
+	background: url("../img/tab-shadow.webp") repeat 0 0 / 100% 100%;
 }
 
 .main-page-tabs .tab-content {
@@ -3140,7 +3140,7 @@ ul.round li h3 {
 }
 
 ul.round li.roundabout-in-focus {
-	background: url("../img/blog-bg.png") repeat 0 0 transparent;
+	background: url("../img/blog-bg.webp") repeat 0 0 transparent;
 	cursor: default;
 
 	-webkit-box-shadow: 0 0 5px #BBBBBB;
@@ -3214,7 +3214,7 @@ ul.round li.roundabout-in-focus .readmore {
 }
 
 .blog-img:after {
-	background: url("../img/shadow.png") no-repeat 0 0 / 100% auto transparent;
+	background: url("../img/shadow.webp") no-repeat 0 0 / 100% auto transparent;
 	bottom: -20px;
 	content: "";
 	height: 20px;
@@ -3228,7 +3228,7 @@ ul.round li.roundabout-in-focus .readmore {
 	height: 100%;
 	opacity: 1;
 	filter: alpha(opacity=100);
-	background: url("../img/inactive.png") repeat 0 0 transparent;
+	background: url("../img/inactive.webp") repeat 0 0 transparent;
 
 	position: absolute;
 	top: 0;
@@ -3518,7 +3518,7 @@ ul.round li.roundabout-in-focus .readmore {
 .sidebox-body {
 	padding: 12px 10px 20px;
 	float: left;
-	background: url("../img/form-head-shadow.png") no-repeat center -1px / 100% auto;
+	background: url("../img/form-head-shadow.webp") no-repeat center -1px / 100% auto;
 	background-color: #F6F5F5;
 	position: relative;
 }
@@ -3528,7 +3528,7 @@ ul.round li.roundabout-in-focus .readmore {
 	float: left;
 	height: 7px;
 	width: 100%;
-	background: url("../img/appointment-form-shadow.png") no-repeat center -4px / 100% 100% transparent;
+	background: url("../img/appointment-form-shadow.webp") no-repeat center -4px / 100% 100% transparent;
 
 	position: absolute;
 	left: 0;
@@ -3623,12 +3623,12 @@ ul.round li.roundabout-in-focus .readmore {
 }
 
 .appointment-form input:focus {
-	background: url("../img/input-focus.jpg") repeat 0 0 transparent;
+	background: url("../img/input-focus.webp") repeat 0 0 transparent;
 }
 
 .appointment-form input:focus {
 	border: 1px solid #F0EFEF;
-	background: url("../img/input-focus.jpg") repeat 0 0 transparent;
+	background: url("../img/input-focus.webp") repeat 0 0 transparent;
 
 	-webkit-box-shadow: 1px 1px 2px #AEAEAE inset;
 	-moz-box-shadow: 1px 1px 2px #AEAEAE inset;
@@ -3718,7 +3718,7 @@ footer {
 	padding-bottom: 50px;
 	border-top: 9px solid #00d0fd;
 	border-bottom: 1px solid #898888;
-	background: url("../img/resource/footer-bg.jpg") repeat scroll 0 0 #1B1B1B;
+	background: url("../img/resource/footer-bg.webp") repeat scroll 0 0 #1B1B1B;
 	float: left;
 	position: relative;
 	overflow: hidden;
@@ -3878,7 +3878,7 @@ footer p {
 }
 
 .quick-menu li {
-	background: url("../img/footer-arrow.png") no-repeat scroll 85% center #2D2D2D;
+	background: url("../img/footer-arrow.webp") no-repeat scroll 85% center #2D2D2D;
 	border-bottom: 1px solid #4D4C4C;
 	float: left;
 	line-height: 11px;
@@ -3964,7 +3964,7 @@ footer p {
 }
 
 .map-shadow {
-	background: url("../img/map-shadow.png") repeat 0 0 transparent;
+	background: url("../img/map-shadow.webp") repeat 0 0 transparent;
 	float: left;
 	height: 10px;
 	margin-top: -7px;
@@ -4221,43 +4221,43 @@ footer p {
 
 /*** Background Patterns ***/
 .bg-body1 {
-	background: url("../img/boxed-bg1.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg1.webp") repeat 0 0 transparent;
 }
 
 .bg-body2 {
-	background: url("../img/boxed-bg2.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg2.webp") repeat 0 0 transparent;
 }
 
 .bg-body3 {
-	background: url("../img/boxed-bg3.png") repeat 0 0 transparent;
+	background: url("../img/boxed-bg3.webp") repeat 0 0 transparent;
 }
 
 .bg-body4 {
-	background: url("../img/boxed-bg4.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg4.webp") repeat 0 0 transparent;
 }
 
 .bg-body5 {
-	background: url("../img/boxed-bg5.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg5.webp") repeat 0 0 transparent;
 }
 
 .bg-body6 {
-	background: url("../img/boxed-bg6.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg6.webp") repeat 0 0 transparent;
 }
 
 .bg-body7 {
-	background: url("../img/boxed-bg7.png") repeat 0 0 transparent;
+	background: url("../img/boxed-bg7.webp") repeat 0 0 transparent;
 }
 
 .bg-body8 {
-	background: url("../img/boxed-bg8.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg8.webp") repeat 0 0 transparent;
 }
 
 .bg-body9 {
-	background: url("../img/boxed-bg9.png") repeat 0 0 transparent;
+	background: url("../img/boxed-bg9.webp") repeat 0 0 transparent;
 }
 
 .bg-body10 {
-	background: url("../img/boxed-bg10.png") repeat 0 0 transparent;
+	background: url("../img/boxed-bg10.webp") repeat 0 0 transparent;
 }
 
 .theme-layout {
@@ -4347,7 +4347,7 @@ aside {
 }
 
 .views-icons a {
-	background: url("../img/list-grid-view-blue.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/list-grid-view-blue.webp") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	float: left;
 	height: 20px;
 	margin-left: 20px;
@@ -4672,7 +4672,7 @@ aside {
 	border-bottom: 1px solid #E5E5E5;
 	display: inline-block;
 	text-align: center;
-	background: url("../img/heading-bg.jpg") repeat 0 0 transparent;
+	background: url("../img/heading-bg.webp") repeat 0 0 transparent;
 	background-size: cover;
 }
 
@@ -4712,7 +4712,7 @@ aside {
 	width: 100%;
 	display: inline-block;
 	position: relative;
-	background: url("../img/pattern1.png") repeat 0 0 transparent;
+	background: url("../img/pattern1.webp") repeat 0 0 transparent;
 }
 
 .intro:after {
@@ -4720,7 +4720,7 @@ aside {
 	height: 13px;
 	content: "";
 	z-index: -1;
-	background: url("../img/shadow2.png") repeat 0 0 / 100% auto transparent;
+	background: url("../img/shadow2.webp") repeat 0 0 / 100% auto transparent;
 
 	position: absolute;
 	left: 0;
@@ -5043,7 +5043,7 @@ aside {
 	font-size: 12px;
 	margin: 0;
 	text-align: center;
-	background: url("../img/about-tabs.jpg") repeat 0 0 transparent;
+	background: url("../img/about-tabs.webp") repeat 0 0 transparent;
 
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -5058,7 +5058,7 @@ aside {
 	margin-top: -4px;
 	border-right: 1px solid #C2C2C2;
 	border-top: 4px solid;
-	background: url("../img/about-tabs-active.jpg") repeat 0 0 transparent;
+	background: url("../img/about-tabs-active.webp") repeat 0 0 transparent;
 }
 
 .aboutus .nav li:first-child a,
@@ -5156,7 +5156,7 @@ aside {
 	width: 100%;
 	padding: 55px 0 60px;
 	display: inline-block;
-	background: url("../img/pattern1.png") repeat 0 0 transparent;
+	background: url("../img/pattern1.webp") repeat 0 0 transparent;
 }
 
 .map .container {
@@ -5189,7 +5189,7 @@ aside {
 }
 
 .add span {
-	background: url("../img/add.png") no-repeat 0 0 transparent;
+	background: url("../img/add.webp") no-repeat 0 0 transparent;
 	padding-left: 20px;
 }
 
@@ -5327,7 +5327,7 @@ label {
 	text-transform: capitalize;
 	float: right;
 	background: #49a3df;
-	/* background:url("../img/submit-comment.jpg") repeat 0 0 transparent; */
+	/* background:url("../img/submit-comment.webp") repeat 0 0 transparent; */
 
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -5443,7 +5443,7 @@ label {
 }
 
 .error-404:before {
-	background: url("../img/resource/error404.png") no-repeat scroll center center;
+	background: url("../img/resource/error404.webp") no-repeat scroll center center;
 	content: "";
 	height: 130px;
 	left: 0;
@@ -5620,7 +5620,7 @@ label {
 	font-size: 13px;
 	line-height: 10px;
 	text-align: center;
-	background: url("../img/gallery-tabs.jpg") repeat 0 0 transparent;
+	background: url("../img/gallery-tabs.webp") repeat 0 0 transparent;
 
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -5642,7 +5642,7 @@ label {
 
 .gallery-tabs .nav li.active a,
 .gallery-tabs .nav li.active a:hover {
-	background: url("../img/gallery-active-tab.jpg") repeat 0 0 transparent;
+	background: url("../img/gallery-active-tab.webp") repeat 0 0 transparent;
 	border-top: 3px solid;
 	margin-bottom: -2px;
 	margin-top: -1px;
@@ -5798,7 +5798,7 @@ label {
 	width: 90%;
 	color: #F5F5F5;
 	padding-left: 24px;
-	background: url(../img/gallery-icon2.png) no-repeat 0 2px transparent;
+	background: url(../img/gallery-icon2.webp) no-repeat 0 2px transparent;
 	position: absolute;
 	left: 0;
 	top: 30%;
@@ -5933,7 +5933,7 @@ label {
 #slider3 .buttons {
 	width: 30px;
 	height: 30px;
-	background: url("../img/recent-post-arrow.png") no-repeat 0 0 #656565;
+	background: url("../img/recent-post-arrow.webp") no-repeat 0 0 #656565;
 
 	position: absolute;
 	right: 0;
@@ -6449,7 +6449,7 @@ label {
 }
 
 .doc-details {
-	background: url("../img/doc-time.jpg") repeat 0 0;
+	background: url("../img/doc-time.webp") repeat 0 0;
 	float: left;
 	width: 50%;
 }
@@ -6805,7 +6805,7 @@ label {
 	width: 65px;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	background: url("../img/play-icon.png") no-repeat 0 0 transparent;
+	background: url("../img/play-icon.webp") no-repeat 0 0 transparent;
 
 	position: absolute;
 	left: 20%;
@@ -6864,7 +6864,7 @@ label {
 }
 
 .single-post-date:after {
-	background: url("../img/sprites.png") no-repeat scroll -95px -272px #656565;
+	background: url("../img/sprites.webp") no-repeat scroll -95px -272px #656565;
 	content: "";
 	height: 30px;
 	left: 13px;
@@ -7106,7 +7106,7 @@ blockquote {
 	font-family: "Montserrat", sans-serif;
 	;
 	font-size: 11px;
-	background: url("../img/replies.png") no-repeat 7px 7px white;
+	background: url("../img/replies.webp") no-repeat 7px 7px white;
 
 	position: absolute;
 	left: 0px;
@@ -7347,7 +7347,7 @@ blockquote {
 	height: 20px;
 	width: 100%;
 	content: "";
-	background: url("../img/btn-shadow1.png") no-repeat 0 0 / 100% auto transparent;
+	background: url("../img/btn-shadow1.webp") no-repeat 0 0 / 100% auto transparent;
 	z-index: -1;
 
 	position: absolute;
@@ -7360,7 +7360,7 @@ blockquote {
 	width: 100%;
 	content: "";
 	z-index: -1;
-	background: url("../img/btn-shadow2.png") no-repeat 0 0 / 100% auto transparent;
+	background: url("../img/btn-shadow2.webp") no-repeat 0 0 / 100% auto transparent;
 
 	position: absolute;
 	bottom: -18px;
@@ -7388,14 +7388,14 @@ blockquote {
 }
 
 .orange {
-	background: url("../img/orange-btn.jpg") repeat 0 0;
+	background: url("../img/orange-btn.webp") repeat 0 0;
 	border: 1px solid #a95151;
 }
 
 .silver {
 	border: 1px solid #a95151;
 	color: #858585;
-	background: url("../img/silver-btn.jpg") repeat 0 0;
+	background: url("../img/silver-btn.webp") repeat 0 0;
 	background-clip: padding-box;
 }
 
@@ -7528,7 +7528,7 @@ blockquote {
 }
 
 .skill .bar {
-	background: url("../img/skill-bar.jpg") repeat 0 0 #49A3DF;
+	background: url("../img/skill-bar.webp") repeat 0 0 #49A3DF;
 
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -7788,11 +7788,11 @@ blockquote {
 }
 
 .accordians.toggle-type2 li {
-	background: url("../img/toggle-type2.jpg") repeat 0 0 transparent;
+	background: url("../img/toggle-type2.webp") repeat 0 0 transparent;
 }
 
 .accordians.toggle-type2 li p {
-	background: url("../img/toggle-type2-active.jpg") repeat 0 0 transparent;
+	background: url("../img/toggle-type2-active.webp") repeat 0 0 transparent;
 }
 
 /*** Pricing Table Style ***/
@@ -7884,7 +7884,7 @@ blockquote {
 	font-size: 18px;
 	font-weight: 600;
 	text-align: center;
-	background: url("../img/year.jpg") repeat scroll 0 0 transparent;
+	background: url("../img/year.webp") repeat scroll 0 0 transparent;
 }
 
 .year>span {
@@ -7911,7 +7911,7 @@ blockquote {
 .pricing li.subscribe {
 	padding: 15px 20px;
 	border-top: 1px solid #E4E2E2;
-	background: url("../img/year.jpg") repeat 0 0 transparent;
+	background: url("../img/year.webp") repeat 0 0 transparent;
 }
 
 .subscribe>button {
@@ -8261,7 +8261,7 @@ blockquote {
 	width: 45px;
 	border: 0 none;
 	margin-top: -1px;
-	background: url("../img/search-arrow.png") no-repeat center center;
+	background: url("../img/search-arrow.webp") no-repeat center center;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -8300,7 +8300,7 @@ blockquote {
 	color: #858585;
 	padding: 20px 0;
 	text-align: center;
-	background: url("../img/sidebar-tabs-bg.jpg") repeat-x 0 0 / 100% 100% transparent;
+	background: url("../img/sidebar-tabs-bg.webp") repeat-x 0 0 / 100% 100% transparent;
 	border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #E9E9E9;
 	border-image: none;
 	border-style: none none none solid;
@@ -8806,7 +8806,7 @@ blockquote {
 	width: 10px;
 	content: "";
 	float: left;
-	background: url("../img/tags-before.png") no-repeat 0 3px #FCFBFB;
+	background: url("../img/tags-before.webp") no-repeat 0 3px #FCFBFB;
 
 	position: absolute;
 	left: 0;
@@ -8840,7 +8840,7 @@ blockquote {
 	height: 26px;
 	content: "";
 	float: left;
-	background: url("../img/tags-after.png") no-repeat 0 2px #FCFBFB;
+	background: url("../img/tags-after.webp") no-repeat 0 2px #FCFBFB;
 
 	position: absolute;
 	right: -1px;
@@ -9074,7 +9074,7 @@ blockquote {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(../img/resource/g2.png);
+	background: url(../img/resource/g2.webp);
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -9548,7 +9548,7 @@ blockquote {
 }
 
 .pxs_bg .pxs_bg3 {
-	background-image: url(../img/pattern1.png);
+	background-image: url(../img/pattern1.webp);
 	/*left negative 1/2 of ww*/
 }
 
@@ -9635,7 +9635,7 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .pxs_navigation span.pxs_prev {
-	background: url(../img/slider-prev.png) no-repeat center center #d5d5d5;
+	background: url(../img/slider-prev.webp) no-repeat center center #d5d5d5;
 	left: 0 !important;
 	-webkit-border-radius: 0 4px 4px 0;
 	-moz-border-radius: 0 4px 4px 0;
@@ -9645,7 +9645,7 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .pxs_navigation span.pxs_next {
-	background: url(../img/slider-next.png) no-repeat center center #d5d5d5;
+	background: url(../img/slider-next.webp) no-repeat center center #d5d5d5;
 	right: 0 !important;
 	-webkit-border-radius: 4px 0 0 4px;
 	-moz-border-radius: 4px 0 0 4px;
@@ -9753,7 +9753,7 @@ ul.pxs_thumbnails li.selected img {
 	width: 65px;
 	cursor: pointer;
 	text-indent: -9000px;
-	background: url("../img/slider-buttons.png") no-repeat scroll 20px 0 #616161;
+	background: url("../img/slider-buttons.webp") no-repeat scroll 20px 0 #616161;
 
 	position: absolute;
 	bottom: 5%;
@@ -9853,7 +9853,7 @@ ul.pxs_thumbnails li.selected img {
 	position: fixed;
 	top: 100px;
 	left: -277px;
-	background: url("../img/panel-bg.jpg") repeat scroll 0 0 transparent;
+	background: url("../img/panel-bg.webp") repeat scroll 0 0 transparent;
 	z-index: 1000;
 
 	-webkit-box-sizing: border-box;
@@ -10029,7 +10029,7 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .panel-icon {
-	background-image: url("../img/panel-icon.png"), url("../img/panel-bg.jpg");
+	background-image: url("../img/panel-icon.webp"), url("../img/panel-bg.webp");
 	background-repeat: no-repeat, repeat;
 	background-position: 3px 10px, 0 0;
 
@@ -10073,43 +10073,43 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .pat1 {
-	background: url("../img/boxed-bg1.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg1.webp") repeat 0 0 transparent;
 }
 
 .pat2 {
-	background: url("../img/boxed-bg2.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg2.webp") repeat 0 0 transparent;
 }
 
 .pat3 {
-	background: url("../img/boxed-bg3.png") repeat 0 0 transparent;
+	background: url("../img/boxed-bg3.webp") repeat 0 0 transparent;
 }
 
 .pat4 {
-	background: url("../img/boxed-bg4.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg4.webp") repeat 0 0 transparent;
 }
 
 .pat5 {
-	background: url("../img/boxed-bg5.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg5.webp") repeat 0 0 transparent;
 }
 
 .pat6 {
-	background: url("../img/boxed-bg6.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg6.webp") repeat 0 0 transparent;
 }
 
 .pat7 {
-	background: url("../img/boxed-bg7.png") repeat 0 0 transparent;
+	background: url("../img/boxed-bg7.webp") repeat 0 0 transparent;
 }
 
 .pat8 {
-	background: url("../img/boxed-bg8.jpg") repeat 0 0 transparent;
+	background: url("../img/boxed-bg8.webp") repeat 0 0 transparent;
 }
 
 .pat9 {
-	background: url("../img/boxed-bg9.png") repeat 0 0 transparent;
+	background: url("../img/boxed-bg9.webp") repeat 0 0 transparent;
 }
 
 .pat10 {
-	background: url("../img/boxed-bg10.png") repeat 0 0 transparent;
+	background: url("../img/boxed-bg10.webp") repeat 0 0 transparent;
 }
 
 
@@ -10162,7 +10162,7 @@ ul.pxs_thumbnails li.selected img {
 	height: 65px;
 	width: 65px;
 	border: 6px solid #FFFFFF;
-	background: url(../img/service-icon-bg.png) no-repeat scroll 0 0 #E1E1E1;
+	background: url(../img/service-icon-bg.webp) no-repeat scroll 0 0 #E1E1E1;
 	text-align: center;
 	-webkit-box-shadow: 0 0 2px #BFBFBF;
 	-moz-box-shadow: 0 0 2px #BFBFBF;
@@ -10326,7 +10326,7 @@ ul.pxs_thumbnails li.selected img {
 #slider4 .buttons {
 	width: 28px;
 	height: 20px;
-	background: url("../img/staff-arrows.png") no-repeat scroll 0 0 transparent;
+	background: url("../img/staff-arrows.webp") no-repeat scroll 0 0 transparent;
 
 	position: absolute;
 	right: 0;
@@ -10395,7 +10395,7 @@ ul.pxs_thumbnails li.selected img {
 	padding: 50px 0;
 	display: block;
 	overflow: hidden;
-	background: url(../img/resource/slider5.jpg) no-repeat 100%;
+	background: url(../img/resource/slider5.webp) no-repeat 100%;
 	background-position: center;
 	background-size: cover;
 }
@@ -10629,7 +10629,7 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .facilityrightblock.lab {
-	background: url(../img/resource/facilitiescontd.png) no-repeat 100%;
+	background: url(../img/resource/facilitiescontd.webp) no-repeat 100%;
 	background-position: center;
 
 }
@@ -10744,7 +10744,7 @@ ul.pxs_thumbnails li.selected img {
 	width: 100%;
 	display: block;
 	overflow: hidden;
-	background: url(../img/resource/g2.png);
+	background: url(../img/resource/g2.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -10992,7 +10992,7 @@ ul.pxs_thumbnails li.selected img {
 	overflow: hidden;
 	padding: 50px 0;
 	/* background: #489dd5; */
-	background: url('../img/resource/affordablecare1.jpg') no-repeat 100%;
+	background: url('../img/resource/affordablecare1.webp') no-repeat 100%;
 	background-position: center;
 	background-size: cover;
 }
@@ -11052,7 +11052,7 @@ ul.pxs_thumbnails li.selected img {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	/* background: url(../img/resource/g3.png);
+	/* background: url(../img/resource/g3.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed; */
@@ -11595,7 +11595,7 @@ ul.pxs_thumbnails li.selected img {
 	padding: 50px 0;
 	display: block;
 	overflow: hidden;
-	background: url(../img/resource/Nephrology.jpg) no-repeat 100%;
+	background: url(../img/resource/Nephrology.webp) no-repeat 100%;
 	background-position: center;
 	background-size: cover;
 }
@@ -11724,7 +11724,7 @@ ul.pxs_thumbnails li.selected img {
 	padding: 50px 0;
 	display: block;
 	overflow: hidden;
-	background: url(../img/resource/about-tab-img.jpg) no-repeat 100% fixed;
+	background: url(../img/resource/about-tab-img.webp) no-repeat 100% fixed;
 	background-position: center;
 	background-size: cover;
 }
@@ -11810,7 +11810,7 @@ ul.pxs_thumbnails li.selected img {
 }
 
 #slider5 .buttons.prev {
-	background: url("../img/affilates-arrows.png") no-repeat scroll 27px center;
+	background: url("../img/affilates-arrows.webp") no-repeat scroll 27px center;
 
 	left: 0;
 	top: 40px;
@@ -11823,7 +11823,7 @@ ul.pxs_thumbnails li.selected img {
 }
 
 #slider5 .buttons.next {
-	background: url("../img/affilates-arrows.png") no-repeat scroll -17px center;
+	background: url("../img/affilates-arrows.webp") no-repeat scroll -17px center;
 
 	top: 40px;
 	right: 0;
@@ -12013,7 +12013,7 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .make-app:after {
-	background: url("../img/app-arrow.png") no-repeat scroll center -6px #7099AD;
+	background: url("../img/app-arrow.webp") no-repeat scroll center -6px #7099AD;
 	bottom: 0;
 	left: 111px;
 	position: absolute;
@@ -12045,7 +12045,7 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .make-app-form {
-	background: url("../img/app-form-bg.png") no-repeat scroll right 0 / auto 100% #88BDD6;
+	background: url("../img/app-form-bg.webp") no-repeat scroll right 0 / auto 100% #88BDD6;
 	display: none;
 	float: left;
 	margin-top: -25px;
@@ -12171,11 +12171,11 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .small-field.app-date {
-	background: url("../img/app-form-icons.png") no-repeat scroll 90% 12px #FFFFFF;
+	background: url("../img/app-form-icons.webp") no-repeat scroll 90% 12px #FFFFFF;
 }
 
 .small-field.app-time {
-	background: url("../img/app-form-icons.png") no-repeat scroll 90% -31px #FFFFFF;
+	background: url("../img/app-form-icons.webp") no-repeat scroll 90% -31px #FFFFFF;
 }
 
 .bottom-space {
@@ -12390,11 +12390,11 @@ ul.pxs_thumbnails li.selected img {
 }
 
 .camera {
-	background: url("../img/camera.png") no-repeat scroll center 5% rgba(135, 162, 148, 0.6);
+	background: url("../img/camera.webp") no-repeat scroll center 5% rgba(135, 162, 148, 0.6);
 }
 
 .video {
-	background: url("../img/video-icon.png") no-repeat scroll center 5% rgba(135, 162, 148, 0.6);
+	background: url("../img/video-icon.webp") no-repeat scroll center 5% rgba(135, 162, 148, 0.6);
 }
 
 .blog-post>p {
@@ -12574,7 +12574,7 @@ h3.sec-title {
 .moving-bg {
 	float: left;
 	position: relative;
-	background: url("../img/about-bg.jpg") no-repeat;
+	background: url("../img/about-bg.webp") no-repeat;
 	border: 1px solid #dfdfdf;
 
 	-webkit-animation: mov 10s infinite linear;
@@ -12687,7 +12687,7 @@ h3.sec-title {
 	height: 110px;
 	width: 70px;
 	z-index: 1;
-	background: url("../img/services-arrows2.png") no-repeat scroll 0 0 transparent;
+	background: url("../img/services-arrows2.webp") no-repeat scroll 0 0 transparent;
 
 	position: absolute;
 	top: 120px;
@@ -12726,7 +12726,7 @@ h3.sec-title {
 }
 
 .fixed-bg2 {
-	background: url("../img/resource/fixed-bg2.jpg") no-repeat 0 0 / 100% 100% transparent;
+	background: url("../img/resource/fixed-bg2.webp") no-repeat 0 0 / 100% 100% transparent;
 	background-attachment: fixed;
 }
 
@@ -12734,7 +12734,7 @@ h3.sec-title {
 	height: 54px;
 	width: 100%;
 	content: "";
-	background: url("../img/rounded-bg-top.png") no-repeat scroll 0 0 transparent;
+	background: url("../img/rounded-bg-top.webp") no-repeat scroll 0 0 transparent;
 	background-size: 100% auto;
 	z-index: 1;
 
@@ -12746,7 +12746,7 @@ h3.sec-title {
 	width: 100%;
 	height: 30px;
 	content: "";
-	background: url("../img/rounded-bg-bottom.png") no-repeat scroll 0 0 transparent;
+	background: url("../img/rounded-bg-bottom.webp") no-repeat scroll 0 0 transparent;
 	background-size: 100% auto;
 
 	position: absolute;
@@ -12988,7 +12988,7 @@ h3.sec-title {
 	padding: 10px 20px;
 	color: #FFFFFF;
 	text-transform: uppercase;
-	background-image: url("../img/slash.png");
+	background-image: url("../img/slash.webp");
 	background-repeat: no-repeat;
 	background-position: center center;
 
@@ -13704,7 +13704,7 @@ header.below:before {
 }
 
 .controls li {
-	background: url("../img/gallery-tabs.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/gallery-tabs.webp") repeat scroll 0 0 rgba(0, 0, 0, 0);
 	border-left: 1px solid #DADADA;
 	border-top: 1px solid #DADADA;
 	color: #858585;
@@ -13723,7 +13723,7 @@ header.below:before {
 }
 
 .controls li.active {
-	background: url("../img/gallery-active-tab.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/gallery-active-tab.webp") repeat scroll 0 0 rgba(0, 0, 0, 0);
 	border-top: 3px solid;
 	margin-bottom: -2px;
 }
@@ -14108,25 +14108,25 @@ a:hover,
 }
 
 .continue {
-	background: url("../img/cont-read-blue.png") no-repeat scroll 0 center transparent;
+	background: url("../img/cont-read-blue.webp") no-repeat scroll 0 center transparent;
 }
 
 .views-icons a {
-	background-image: url("../img/list-grid-view-blue.png");
+	background-image: url("../img/list-grid-view-blue.webp");
 }
 
 .recent-event-links>a {
-	background: url("../img/recent-events-link-blue.png") no-repeat 0 1px transparent;
+	background: url("../img/recent-events-link-blue.webp") no-repeat 0 1px transparent;
 }
 
 .pricing li {
-	background: url("../img/list-icon-blue.png") no-repeat 35px center #F9F8F8;
+	background: url("../img/list-icon-blue.webp") no-repeat 35px center #F9F8F8;
 }
 
 .pricing ul:hover .price-head,
 .pricing ul:hover .subscribe button,
 .performance .progress .bar {
-	background: url("../img/pricing-hover-blue.png") repeat 0 0 transparent;
+	background: url("../img/pricing-hover-blue.webp") repeat 0 0 transparent;
 }
 
 
@@ -14562,7 +14562,7 @@ video {
 }
 
 .radio {
-	background: url("../img/radio.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/radio.webp") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .checkbox,
@@ -14603,7 +14603,7 @@ video {
 }
 
 .doctor-search>input[type="submit"] {
-	background: url("../img/magnify.png") no-repeat scroll center center padding-box #616161;
+	background: url("../img/magnify.webp") no-repeat scroll center center padding-box #616161;
 	border: 0;
 	float: right;
 	height: 30px;
@@ -14636,7 +14636,7 @@ video {
 }
 
 .appointment-gray>p {
-	background: url("../img/clock.jpg") no-repeat scroll -36px 2px rgba(0, 0, 0, 0);
+	background: url("../img/clock.webp") no-repeat scroll -36px 2px rgba(0, 0, 0, 0);
 	color: #656565;
 	float: left;
 	font-family: "Montserrat", sans-serif;
@@ -16213,7 +16213,7 @@ iframe {
 
 .checkout-block-title h3:before,
 .checkout-block-title h3:after {
-	background: url("../img/plus-minus.png") no-repeat scroll 7px -8px transparent;
+	background: url("../img/plus-minus.webp") no-repeat scroll 7px -8px transparent;
 	content: "";
 	height: 23px;
 	left: 15px;
@@ -16228,7 +16228,7 @@ iframe {
 }
 
 .checkout-block-title.active-block h3:after {
-	background: url("../img/plus-minus.png") no-repeat scroll 7px 8px transparent;
+	background: url("../img/plus-minus.webp") no-repeat scroll 7px 8px transparent;
 }
 
 .checkout-block-title h3:before {
@@ -16436,7 +16436,7 @@ iframe {
 
 /*** ORDER RECIEVED PAGE ***/
 .oreder-recieved {
-	background: url("../img/pattern3.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/pattern3.webp") repeat scroll 0 0 rgba(0, 0, 0, 0);
 	border: 1px solid #E4E4E3;
 	border-radius: 3px;
 	float: left;
@@ -16487,7 +16487,7 @@ iframe {
 }
 
 .oreder-recieved a {
-	background: url("../img/go-back.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+	background: url("../img/go-back.webp") no-repeat scroll right center rgba(0, 0, 0, 0);
 	color: #A6A6A6;
 	display: table;
 	font-family: "Montserrat", sans-serif;
@@ -16750,7 +16750,7 @@ iframe {
 }
 
 .staff-carousel .owl-controls .owl-buttons>div {
-	background: url("../img/staff-arrows.png") no-repeat scroll 10px -19px rgba(0, 0, 0, 0);
+	background: url("../img/staff-arrows.webp") no-repeat scroll 10px -19px rgba(0, 0, 0, 0);
 	color: rgba(0, 0, 0, 0);
 	float: left;
 	width: 50%;
@@ -16912,7 +16912,7 @@ iframe {
 
 .year-detail:before,
 .year-detail:after {
-	background: url("../img/shadows.png") no-repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+	background: url("../img/shadows.webp") no-repeat scroll 0 0 rgba(255, 255, 255, 0.9);
 	background-size: 100% 100%;
 	content: "";
 	height: 100%;
@@ -16930,7 +16930,7 @@ iframe {
 }
 
 .year-detail:after {
-	background: url("../img/shadows.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0.35);
+	background: url("../img/shadows.webp") no-repeat scroll 0 0 rgba(0, 0, 0, 0.35);
 	height: 0;
 	top: auto;
 	bottom: 0;
@@ -17636,7 +17636,7 @@ iframe {
 
 .owl-controls .owl-prev,
 .owl-controls .owl-next {
-	background: url("../img/arrows.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/arrows.webp") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	color: rgba(0, 0, 0, 0);
 	float: left;
 	height: 25px;
@@ -18256,7 +18256,7 @@ iframe {
 
 .find-doctor .minict_wrapper:after {
 	background-color: #747474;
-	background-image: url("../img/down-arrow-white.png");
+	background-image: url("../img/down-arrow-white.webp");
 	height: 32px;
 	top: 2px;
 }
@@ -18274,7 +18274,7 @@ iframe {
 }
 
 .search-doctor .find-doctor .radio {
-	background-image: url("../img/radio2.png");
+	background-image: url("../img/radio2.webp");
 	height: 19px;
 	margin-top: 4px;
 	width: 17px;
@@ -18311,7 +18311,7 @@ iframe {
 
 
 .give-donation {
-	background: url("../img/resource/donation-bg.jpg") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+	background: url("../img/resource/donation-bg.webp") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
 	float: left;
 	padding: 50px 35px;
 	width: 100%;
@@ -18926,7 +18926,7 @@ iframe {
 }
 
 .spa-carousel .owl-controls .owl-buttons>div {
-	background: url("../img/spa-carousel-arrows.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/spa-carousel-arrows.webp") repeat scroll 0 0 rgba(0, 0, 0, 0);
 	height: 67px;
 	margin-top: -33px;
 	width: 29px;
@@ -19309,7 +19309,7 @@ section.blackish:before {
 }
 
 .tab-icons li a .tab-icon {
-	background: url("../img/tab-icons.png") no-repeat scroll 12px 12px #fff;
+	background: url("../img/tab-icons.webp") no-repeat scroll 12px 12px #fff;
 	border: 0 none;
 	height: 50px;
 	width: 50px;
@@ -21362,7 +21362,7 @@ header.header-wrapped.stick {
 /* Blog Single Page CSS */
 
 .singleblogbanner {
-	background: url(img/resource/event-image.jpg);
+	background: url(img/resource/event-image.webp);
 	width: 100%;
 	height: 480px;
 	background-size: cover !important;

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Moraya Multispeciality Charitable Hospital Website",
   "scripts": {
-    "sitemap": "node scripts/update-sitemap-dynamic.js"
-  },
+    "sitemap": "node scripts/update-sitemap-dynamic.js",
+    "sitemap:watch": "node scripts/update-sitemap-dynamic.js --watch"  },
   "keywords": [
     "hospital",
     "blogs",

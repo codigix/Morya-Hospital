@@ -2282,7 +2282,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url("../img/glyphicons-halflings.webp");
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -2306,7 +2306,7 @@ table th[class*="span"],
 .dropdown-submenu:focus>a>[class^="icon-"],
 .dropdown-submenu:hover>a>[class*=" icon-"],
 .dropdown-submenu:focus>a>[class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
+  background-image: url("../img/glyphicons-halflings-white.webp");
 }
 
 .icon-glass {
@@ -5792,7 +5792,7 @@ a.badge:focus {
 }
 
 .progress:after {
-  background: url("../img/progress-bar-shadow.png") no-repeat scroll -4px -21px / 100% auto transparent;
+  background: url("../img/progress-bar-shadow.webp") no-repeat scroll -4px -21px / 100% auto transparent;
   content: "";
   float: left;
   height: 15px;
@@ -5810,7 +5810,7 @@ a.badge:focus {
   color: #ffffff;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background: url("../img/progress-bar.jpg") repeat 0 0 / auto 100%;
+  background: url("../img/progress-bar.webp") repeat 0 0 / auto 100%;
 
   -webkit-box-shadow: 5px 0 0 #3598DB;
   -moz-box-shadow: 5px 0 0 #3598DB;

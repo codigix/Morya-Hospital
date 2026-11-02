@@ -261,18 +261,18 @@ header #menu .mega-menu ul li:hover > a,
 
 
 .continue {
-    background:url("../img/cont-read-red.png") no-repeat scroll 0 center transparent;
+    background:url("../img/cont-read-red.webp") no-repeat scroll 0 center transparent;
 }
 .views-icons a{
-	background-image:url("../img/list-grid-view-red.png");
+	background-image:url("../img/list-grid-view-red.webp");
 }
 .recent-event-links > a{
-	background:url("../img/recent-events-link-red.png") no-repeat 0 1px transparent;
+	background:url("../img/recent-events-link-red.webp") no-repeat 0 1px transparent;
 }
 .pricing li {
-	background:url("../img/list-icon-red.png") no-repeat 35px center #F9F8F8;
+	background:url("../img/list-icon-red.webp") no-repeat 35px center #F9F8F8;
 }
 .pricing ul:hover .price-head, .pricing ul:hover .subscribe button,
 .performance .progress .bar {
-	background:url("../img/pricing-hover-red.png") repeat 0 0 transparent;
+	background:url("../img/pricing-hover-red.webp") repeat 0 0 transparent;
 }

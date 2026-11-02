@@ -22,7 +22,7 @@
         content="Read healthcare articles from Moraya Multispeciality Charitable Hospital Chinchwad.">
     <meta property="og:url" id="ogUrl" content="https://morayamultispecialitycharitablehospital.com/blog-details.html">
     <meta property="og:image" id="ogImage"
-        content="https://morayamultispecialitycharitablehospital.com/img/resource/slider4.jpg">
+        content="https://morayamultispecialitycharitablehospital.com/img/resource/slider4.webp">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -30,7 +30,7 @@
     <meta name="twitter:description" id="twitterDescription"
         content="Read healthcare articles from Moraya Multispeciality Charitable Hospital Chinchwad.">
     <meta name="twitter:image" id="twitterImage"
-        content="https://morayamultispecialitycharitablehospital.com/img/resource/slider4.jpg">
+        content="https://morayamultispecialitycharitablehospital.com/img/resource/slider4.webp">
 
     <!-- CSS STYLES -->
     <link href="css/common.css" rel="stylesheet">
@@ -148,11 +148,11 @@
                         <ul>
                             <li><a href="" title=""><i class="theme-icon clock"></i> 24 Hours</a></li>
                             <li><a href="https://www.facebook.com/people/Morya-Hospital/61579387655935/" title=""><img
-                                        src="img/resource/fb.png" alt="facebook"> </a></li>
+                                        src="img/resource/fb.webp" alt="facebook"> </a></li>
                             <li><a href="https://www.instagram.com/moraya_hospital_chinchwad/" title=""><img
-                                        src="img/resource/insta.png" alt="instagram"> </a></li>
+                                        src="img/resource/insta.webp" alt="instagram"> </a></li>
                             <li><a href="https://www.youtube.com/@MorayaHospital-chinchwad" title=""><img
-                                        src="img/resource/youtube.png" alt="youtube"> </a></li>
+                                        src="img/resource/youtube.webp" alt="youtube"> </a></li>
                         </ul>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
             <div class="container">
                 <div class="logo">
                     <a href="https://morayamultispecialitycharitablehospital.com/" title=""><img
-                            src="img/resource/logo.png" alt="logo" /></a>
+                            src="img/resource/logo.webp" alt="logo" /></a>
                 </div>
 
                 <div id="menu">
@@ -193,7 +193,7 @@
 
         <div class="responsive-header">
             <div class="responsive-logo">
-                <a href="#" title=""><img src="img/resource/logo.png" alt="logo" /></a>
+                <a href="#" title=""><img src="img/resource/logo.webp" alt="logo" /></a>
             </div>
             <span><i class="icon-align-justify"></i></span>
             <ul>
@@ -224,7 +224,7 @@
         <!-- Banner Section -->
         <section id="mainSection">
             <div class="innerpagebanner" id="bannerContainer"
-                style="background: url(img/resource/ot.jpg) no-repeat 100%;">
+                style="background: url(img/resource/ot.webp) no-repeat 100%;">
                 <div class="container">
                     <div class="innerpagebannertitle">
                         <h1 id="bannerTitle">Loading Blog Details...</h1>
@@ -249,7 +249,7 @@
                                 Loading blog details from JSON...
                             </div>
                             <div id="blogContentWrapper" style="display: none;">
-                                <img id="featuredImage" alt="Blog Image" src="img/resource/slider4.jpg">
+                                <img id="featuredImage" alt="Blog Image" src="img/resource/slider4.webp">
                                 <div class="blog-content">
                                     <ul class="bloginfo">
                                         <li><i class="theme-icon calender"></i><span id="blogDate"></span></li>
@@ -327,7 +327,7 @@
             <div class="widget">
                 <h3 class="footer-title">Our <span>Location</span></h3>
                 <div class="location">
-                    <p><img src="img/resource/f-logo.PNG" alt="logo" />Chinchwadgaon, Pune</p>
+                    <p><img src="img/resource/f-logo.webp" alt="logo" />Chinchwadgaon, Pune</p>
                     <ul>
                         <li><i class="theme-icon email"></i><span class="source">by e-mail;</span> <span
                                 class="detail"><a href="mailto:amfmoraya@gmail.com"
@@ -356,12 +356,12 @@
                 <h3 class="footer-title">Recent <span>From Google</span></h3>
                 <p>Ashwin Medical Foundation's - Moraya Multispeciality Charitable Hospital </p>
                 <div class="flickr-images">
-                    <a href="#"><img src="img/resource/1z.jpg" alt="Affordable healthcare near me in Chinchwad" /></a>
-                    <a href="#"><img src="img/resource/2z.jpg" alt="Best affordable hospital near me" /></a>
-                    <a href="#"><img src="img/resource/3z.jpg" alt="Low cost healthcare services near me" /></a>
-                    <a href="#"><img src="img/resource/4z.jpg" alt="Budget-friendly hospital in Chinchwad" /></a>
-                    <a href="#"><img src="img/resource/5z.jpg" alt="Affordable medical treatment near me" /></a>
-                    <a href="#"><img src="img/resource/6z.jpg"
+                    <a href="#"><img src="img/resource/1z.webp" alt="Affordable healthcare near me in Chinchwad" /></a>
+                    <a href="#"><img src="img/resource/2z.webp" alt="Best affordable hospital near me" /></a>
+                    <a href="#"><img src="img/resource/3z.webp" alt="Low cost healthcare services near me" /></a>
+                    <a href="#"><img src="img/resource/4z.webp" alt="Budget-friendly hospital in Chinchwad" /></a>
+                    <a href="#"><img src="img/resource/5z.webp" alt="Affordable medical treatment near me" /></a>
+                    <a href="#"><img src="img/resource/6z.webp"
                             alt="Cost-effective healthcare services in Chinchwad" /></a>
                 </div>
             </div>
@@ -454,7 +454,7 @@
 
                     renderBlogDetail(blog);
                     const cleanSlug = (blog.slug || blog.id).replace(/\.html$/, "");
-                    if (location.protocol !== "file:") history.replaceState(null, "", "/blog.html/" + encodeURIComponent(cleanSlug) + ".html");
+                    if (location.protocol !== "file:" && !["localhost","127.0.0.1"].includes(location.hostname)) history.replaceState(null, "", "/blog.html/" + encodeURIComponent(cleanSlug) + ".html");
                 })
                 .catch(err => {
                     console.error('Error fetching blogs:', err);
@@ -489,7 +489,7 @@
 
             // Featured Image
             const imgEl = document.getElementById('featuredImage');
-            imgEl.src = blog.image || 'img/resource/slider4.jpg';
+            imgEl.src = blog.image || 'img/resource/slider4.webp';
             imgEl.alt = blog.imageAlt || title;
 
             // Metadata info

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+
+# Server-specific config (differs per host)
+.user.ini
+
+# Stale generated sitemap archives (sitemap.xml is the source of truth)
+sitemap.xml.gz
+sitemaps.zip
+
+# Archives and temp files
+*.zip
+*.rar
+*.7z
+*.bak
+*.tmp

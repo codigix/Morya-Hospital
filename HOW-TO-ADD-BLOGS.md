@@ -22,7 +22,7 @@ Add your new blog at the top of the array:
   "image": "img/resource/your-image.webp",
   "imageAlt": "Alt text for image",
   "excerpt": "Short 1-2 sentence preview for the card on blog.html...",
-  "bannerBg": "img/resource/ot.jpg",
+  "bannerBg": "img/resource/ot.webp",
   "bannerTitle": "My New Treatment Title Here",
   "metaTitle": "SEO Title Here | Moraya Hospital Chinchwad",
   "metaDescription": "SEO meta description under 160 characters...",

@@ -260,18 +260,18 @@ header #menu .mega-menu ul li:hover > a,
 }
 
 .continue {
-    background:url("../img/cont-read-orange.png") no-repeat scroll 0 center transparent;
+    background:url("../img/cont-read-orange.webp") no-repeat scroll 0 center transparent;
 }
 .views-icons a{
-	background-image:url("../img/list-grid-view-orange.png");
+	background-image:url("../img/list-grid-view-orange.webp");
 }
 .recent-event-links > a{
-	background:url("../img/recent-events-link-orange.png") no-repeat 0 1px transparent;
+	background:url("../img/recent-events-link-orange.webp") no-repeat 0 1px transparent;
 }
 .pricing li {
-	background:url("../img/list-icon-orange.png") no-repeat 35px center #F9F8F8;
+	background:url("../img/list-icon-orange.webp") no-repeat 35px center #F9F8F8;
 }
 .pricing ul:hover .price-head, .pricing ul:hover .subscribe button,
 .performance .progress .bar {
-	background:url("../img/pricing-hover-orange.png") repeat 0 0 transparent;
+	background:url("../img/pricing-hover-orange.webp") repeat 0 0 transparent;
 }
