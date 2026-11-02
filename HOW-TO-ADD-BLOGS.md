@@ -39,7 +39,7 @@ Add your new blog at the top of the array:
 
 ### Done! 🎉
 - It will **immediately appear** on [blog.html](./blog.html).
-- Clicking it opens [blog-details.html?slug=my-new-treatment-pcmc](./blog-details.html?slug=my-new-treatment-pcmc) with all images, content, and FAQs.
+- Clicking it opens `/blog/my-new-treatment-pcmc` with all images, content, and FAQs.
 - The "Recent Blogs" sidebar in [blog-details.html](./blog-details.html) will automatically include it.
 
 ---

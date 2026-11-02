@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags (Dynamically updated by JS) -->
@@ -407,6 +408,10 @@
             // Get slug or id from URL: ?slug=xyz or ?id=xyz
             const urlParams = new URLSearchParams(window.location.search);
             let slug = urlParams.get('slug') || urlParams.get('id');
+            if (!slug) {
+                const m = window.location.pathname.match(/\/([^\/]+)\.html$/);
+                if (m && m[1] !== "blog-details") slug = decodeURIComponent(m[1]);
+            }
 
             // If empty, default to the first blog
             fetch('data/blogs.json')
@@ -448,6 +453,8 @@
                     }
 
                     renderBlogDetail(blog);
+                    const cleanSlug = (blog.slug || blog.id).replace(/\.html$/, "");
+                    if (location.protocol !== "file:") history.replaceState(null, "", "/blog.html/" + encodeURIComponent(cleanSlug) + ".html");
                 })
                 .catch(err => {
                     console.error('Error fetching blogs:', err);
@@ -528,7 +535,7 @@
             let html = '';
             blogs.forEach(b => {
                 const targetSlug = b.slug ? b.slug.replace(/\.html$/, '') : b.id;
-                html += `<li><a href="blog-details.html?slug=${encodeURIComponent(targetSlug)}">${escapeHtml(b.title)}</a></li>`;
+                html += `<li><a href="${blogUrl(targetSlug)}">${escapeHtml(b.title)}</a></li>`;
             });
             listEl.innerHTML = html;
         }
@@ -545,6 +552,12 @@
             `;
         }
 
+
+        // Clean URL (/blog/slug) on the live server; Live Server/localhost has no rewrite, so use the query form there.
+        function blogUrl(slug) {
+            const local = ['localhost', '127.0.0.1'].includes(location.hostname) || location.protocol === 'file:';
+            return local ? 'blog-details.html?slug=' + encodeURIComponent(slug) : '/blog.html/' + encodeURIComponent(slug) + '.html';
+        }
         function escapeHtml(text) {
             if (!text) return '';
             const div = document.createElement('div');

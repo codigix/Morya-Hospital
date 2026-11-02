@@ -15,7 +15,7 @@ while ((match = urlEntryRegex.exec(sitemapContent)) !== null) {
   if (locMatch) {
     const loc = locMatch[1].trim();
     const filename = loc.split('/').pop().toLowerCase().trim();
-    if (!blogSlugs.has(filename)) {
+    if (!blogSlugs.has(filename) && !loc.includes("blog-details.html?slug=") && !blogSlugs.has(filename.replace(/\.html$/,""))) {
       coreEntries.push(fullEntry);
     }
   }
@@ -37,7 +37,7 @@ const blogUrlEntries = blogs.map(b => {
   const slug = b.slug.replace(/\.html$/, '');
   const lastmod = b.lastmod || new Date().toISOString();
   return `  <url>
-    <loc>https://morayamultispecialitycharitablehospital.com/blog-details.html?slug=${encodeURIComponent(slug)}</loc>
+    <loc>https://morayamultispecialitycharitablehospital.com/blog.html/${encodeURIComponent(slug)}.html</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>0.64</priority>
   </url>`;

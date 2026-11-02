@@ -326,7 +326,7 @@
                                     </ul>
                                     <h2 style="line-height: 25px;">${escapeHtml(b.title)}</h2>
                                     <p>${escapeHtml(b.excerpt || '')}</p>
-                                    <a href="blog-details.html?slug=${encodeURIComponent(targetSlug)}" class="read-btn">Read More</a>
+                                    <a href="${blogUrl(targetSlug)}" class="read-btn">Read More</a>
                                 </div>
                             </div>
                         `;
@@ -340,6 +340,12 @@
                 });
         });
 
+
+        // Clean URL (/blog/slug) on the live server; Live Server/localhost has no rewrite, so use the query form there.
+        function blogUrl(slug) {
+            const local = ['localhost', '127.0.0.1'].includes(location.hostname) || location.protocol === 'file:';
+            return local ? 'blog-details.html?slug=' + encodeURIComponent(slug) : '/blog.html/' + encodeURIComponent(slug) + '.html';
+        }
         function escapeHtml(text) {
             if (!text) return '';
             const div = document.createElement('div');
