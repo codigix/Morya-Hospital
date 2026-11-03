@@ -595,13 +595,26 @@
             document.head.appendChild(el);
         }
 
+        // function renderRecentBlogs(blogs) {
+        //     const listEl = document.getElementById('recentBlogsList');
+        //     let html = '';
+        //     blogs.forEach(b => {
+        //         const targetSlug = b.slug ? b.slug.replace(/\.html$/, '') : b.id;
+        //         html += `<li><a href="${blogUrl(targetSlug)}">${escapeHtml(b.title)}</a></li>`;
+        //     });
+        //     listEl.innerHTML = html;
+        // }
+
         function renderRecentBlogs(blogs) {
             const listEl = document.getElementById('recentBlogsList');
             let html = '';
-            blogs.forEach(b => {
+
+            blogs.slice(0, 10).forEach(b => {
                 const targetSlug = b.slug ? b.slug.replace(/\.html$/, '') : b.id;
+
                 html += `<li><a href="${blogUrl(targetSlug)}">${escapeHtml(b.title)}</a></li>`;
             });
+
             listEl.innerHTML = html;
         }
 
