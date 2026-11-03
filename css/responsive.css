@@ -3753,8 +3753,20 @@
 
   .bottom-footer ul {
     background: none;
-    padding: 30px 0;
+    /* padding: 30px 0; */
     width: 100%;
+  }
+
+  .bottom-footer {
+    font-size: 11px;
+  }
+
+  .footer-social-icons>ul {
+    margin: 0px 0;
+  }
+
+  .footer-social-icons li {
+    margin: 0 5px;
   }
 
   .container {

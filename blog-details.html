@@ -367,11 +367,22 @@
             </div>
         </div>
     </footer>
+    </footer>
 
     <div class="bottom-footer">
         <div class="container">
             <p>@ All Rights Reserved by Moraya Multispeciality Charitable Hospital | Website Designed by <a
                     href="https://codigix.co/" target="_blank" title="">Codigix infotech Pvt Ltd</a></p>
+            <div class="footer-social-icons">
+
+                <ul>
+                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="img/resource/Moraya-Patient-Consent-Form.pdf" target="_blank">Patient Consent
+                            Form</a></li>
+                </ul>
+
+            </div>
         </div>
     </div>
 
@@ -454,7 +465,7 @@
 
                     renderBlogDetail(blog);
                     const cleanSlug = (blog.slug || blog.id).replace(/\.html$/, "");
-                    if (location.protocol !== "file:" && !["localhost","127.0.0.1"].includes(location.hostname)) history.replaceState(null, "", "/blog.html/" + encodeURIComponent(cleanSlug) + ".html");
+                    if (location.protocol !== "file:" && !["localhost", "127.0.0.1"].includes(location.hostname)) history.replaceState(null, "", "/blog.html/" + encodeURIComponent(cleanSlug) + ".html");
                 })
                 .catch(err => {
                     console.error('Error fetching blogs:', err);

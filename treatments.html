@@ -1659,9 +1659,14 @@ Moraya Multispeciality Charitable Hospital</span>
       <p>@ All Rights Reserved" by Moraya Multispeciality Charitable Hospital | Website Designed by <a
           href="https://codigix.co/" target="_blank" title="">Codigix infotech Pvt Ltd</a></p>
       <div class="footer-social-icons">
-        <ul>
 
+        <ul>
+          <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="img/resource/Moraya-Patient-Consent-Form.pdf" target="_blank">Patient Consent
+              Form</a></li>
         </ul>
+
       </div>
     </div>
   </div><!-- Bottom Footer Strip -->
@@ -1936,25 +1941,25 @@ Moraya Multispeciality Charitable Hospital</span>
 </script>
 
 
-    <script>
-        // Local static servers (Live Server) cannot rewrite /<slug>.html, so route clicks through service-details.html,
-        // which then shows the clean /<slug>.html address. On the live site the server rewrite handles the link directly.
-        (function () {
-            var local = ['localhost', '127.0.0.1'].indexOf(location.hostname) !== -1;
-            if (!local) return;
-            fetch('data/services.json').then(function (r) { return r.json(); }).then(function (list) {
-                var slugs = list.map(function (s) { return s.slug; });
-                document.addEventListener('click', function (e) {
-                    var a = e.target.closest && e.target.closest('a[href$=".html"]');
-                    if (!a) return;
-                    var slug = a.getAttribute('href').replace(/\.html$/, '');
-                    if (slugs.indexOf(slug) === -1) return;
-                    e.preventDefault();
-                    location.href = '/service-details.html?slug=' + encodeURIComponent(slug);
-                });
-            });
-        })();
-    </script>
+  <script>
+    // Local static servers (Live Server) cannot rewrite /<slug>.html, so route clicks through service-details.html,
+    // which then shows the clean /<slug>.html address. On the live site the server rewrite handles the link directly.
+    (function () {
+      var local = ['localhost', '127.0.0.1'].indexOf(location.hostname) !== -1;
+      if (!local) return;
+      fetch('data/services.json').then(function (r) { return r.json(); }).then(function (list) {
+        var slugs = list.map(function (s) { return s.slug; });
+        document.addEventListener('click', function (e) {
+          var a = e.target.closest && e.target.closest('a[href$=".html"]');
+          if (!a) return;
+          var slug = a.getAttribute('href').replace(/\.html$/, '');
+          if (slugs.indexOf(slug) === -1) return;
+          e.preventDefault();
+          location.href = '/service-details.html?slug=' + encodeURIComponent(slug);
+        });
+      });
+    })();
+  </script>
 </body>
 
 </html>

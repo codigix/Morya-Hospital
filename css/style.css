@@ -4159,17 +4159,17 @@ footer p {
 	background: none repeat scroll 0 0 transparent !important;
 	float: left;
 	list-style: none outside none;
-	margin: 25px 0;
+	margin: 10px 0;
 }
 
 .footer-social-icons li {
-	background: none repeat scroll 0 0 #2F2F2F;
-	border: 1px solid #4D4D4D;
-	border-radius: 3px 3px 3px 3px;
+	/* background: none repeat scroll 0 0 #2F2F2F; */
+	/* border: 1px solid #4D4D4D; */
+	/* border-radius: 3px 3px 3px 3px; */
 	float: left;
-	height: 27px;
-	margin: 0 5px;
-	width: 27px;
+	/* height: 27px; */
+	margin: 0 8px;
+	/* width: 27px; */
 }
 
 .footer-social-icons li i {
