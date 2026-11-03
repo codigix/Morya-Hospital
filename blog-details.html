@@ -549,12 +549,39 @@
             }
             document.getElementById('articleBody').innerHTML = bodyHtml;
 
+            // Any FAQ written inside the article body is moved out into the separate FAQ section
+            const faqList = (Array.isArray(blog.faqs) ? blog.faqs : []).slice();
+            const bodyEl = document.getElementById('articleBody');
+            const faqHeading = Array.from(bodyEl.children).find(el =>
+                /^H[1-6]$/.test(el.tagName) && /\bfaqs?\b|frequently asked/i.test(el.textContent));
+            if (faqHeading) {
+                const level = parseInt(faqHeading.tagName[1], 10);
+                const nodes = [];
+                let n = faqHeading.nextElementSibling;
+                while (n && !(/^H[1-6]$/.test(n.tagName) && parseInt(n.tagName[1], 10) <= level)) {
+                    nodes.push(n);
+                    n = n.nextElementSibling;
+                }
+                let cur = null;
+                nodes.forEach(el => {
+                    const isQ = /^H[1-6]$/.test(el.tagName) || /^\s*(Q[\d.:)\s]|\d+[.)]\s).*\?\s*$/i.test(el.textContent) || (el.tagName === 'P' && el.children.length === 1 && el.firstElementChild.tagName === 'STRONG' && /\?\s*$/.test(el.textContent));
+                    if (isQ) {
+                        cur = { question: el.textContent.replace(/^\s*(Q?\d*[.:)]\s*)/i, '').trim(), answer: '' };
+                        faqList.push(cur);
+                    } else if (cur) {
+                        cur.answer += (cur.answer ? ' ' : '') + el.textContent.trim().replace(/^\s*A[.:)]\s*/i, '');
+                    }
+                });
+                nodes.forEach(el => el.remove());
+                faqHeading.remove();
+            }
+
             // FAQs
             const faqSection = document.getElementById('faqSection');
             const faqAccordion = document.getElementById('faqAccordion');
-            if (blog.faqs && Array.isArray(blog.faqs) && blog.faqs.length > 0) {
+            if (faqList.length > 0) {
                 let faqHtml = '';
-                blog.faqs.forEach(faq => {
+                faqList.forEach(faq => {
                     faqHtml += `
                         <dt><a href="javascript:void(0)"><i class="icon-arrow-right"></i> ${escapeHtml(faq.question)}</a></dt>
                         <dd style="display: none;"><p>${escapeHtml(faq.answer)}</p></dd>
