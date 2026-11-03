@@ -492,7 +492,30 @@
 
             // Schema (JSON-LD): optional "schema" field in blogs.json - an object, an array of objects,
             // or the pasted ld+json script tag text
-            injectSchema(blog.schema);
+            const siteBase = 'https://morayamultispecialitycharitablehospital.com';
+            const pageSlug = (blog.slug || blog.id || '').replace(/\.html$/, '');
+            const pageUrl = blog.canonical || (siteBase + '/blog.html/' + encodeURIComponent(pageSlug) + '.html');
+            const imgAbs = blog.image ? (/^https?:/i.test(blog.image) ? blog.image : siteBase + '/' + blog.image.replace(/^\//, '')) : '';
+            const setAttr = (id, attr, val) => { const e = document.getElementById(id); if (e && val) e.setAttribute(attr, val); };
+            setAttr('canonicalLink', 'href', pageUrl);
+            setAttr('ogTitle', 'content', metaTitle);
+            setAttr('ogDescription', 'content', metaDesc);
+            setAttr('ogUrl', 'content', pageUrl);
+            setAttr('ogImage', 'content', imgAbs);
+            setAttr('twitterTitle', 'content', metaTitle);
+            setAttr('twitterDescription', 'content', metaDesc);
+            setAttr('twitterImage', 'content', imgAbs);
+
+            injectSchema(blog.schema && (typeof blog.schema !== 'string' || blog.schema.trim()) ? blog.schema : {
+                '@context': 'https://schema.org',
+                '@type': 'MedicalArticle',
+                headline: title,
+                description: metaDesc,
+                image: imgAbs,
+                author: { '@type': 'Organization', name: 'Moraya Multispeciality Charitable Hospital' },
+                publisher: { '@type': 'Organization', name: 'Moraya Multispeciality Charitable Hospital' },
+                mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl }
+            });
 
             // Banner
             const bannerContainer = document.getElementById('bannerContainer');
