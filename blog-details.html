@@ -576,6 +576,13 @@
                 faqHeading.remove();
             }
 
+            // Remove duplicate questions (same FAQ in both the article body and the faqs array)
+            const seenFaq = new Set();
+            for (let i = 0; i < faqList.length; i++) {
+                const key = (faqList[i].question || '').toLowerCase().replace(/^\s*(q?\d+[.:)]\s*)/, '').replace(/[^a-z0-9]+/g, ' ').trim();
+                if (seenFaq.has(key)) { faqList.splice(i--, 1); } else { seenFaq.add(key); }
+            }
+
             // FAQs
             const faqSection = document.getElementById('faqSection');
             const faqAccordion = document.getElementById('faqAccordion');
