@@ -549,6 +549,30 @@
             }
             document.getElementById('articleBody').innerHTML = bodyHtml;
 
+            // Some blogs repeat the title as their first heading (an <h2>, or a heading inside a wrapper div).
+            // The title is already shown above, so drop that first heading when it matches the title.
+            (function removeDuplicateTitle() {
+                const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+                const words = s => new Set(norm(s).split(' ').filter(w => w.length > 2));
+                const titles = [blog.title, blog.bannerTitle, document.getElementById('bannerTitle').innerText].filter(Boolean);
+                const first = document.getElementById('articleBody').querySelector('h1, h2, h3');
+                if (!first) return;
+                const fw = words(first.textContent);
+                if (!fw.size) return;
+                const same = titles.some(t => {
+                    const tw = words(t);
+                    if (!tw.size) return false;
+                    let common = 0;
+                    fw.forEach(w => { if (tw.has(w)) common++; });
+                    return common / Math.min(fw.size, tw.size) >= 0.8;
+                });
+                if (!same) return;
+                const parent = first.parentElement;
+                first.remove();
+                // remove a wrapper that only held the heading
+                if (parent && parent.id !== 'articleBody' && !parent.textContent.trim() && !parent.querySelector('img, iframe, video')) parent.remove();
+            })();
+
             // Any FAQ written inside the article body is moved out into the separate FAQ section
             const faqList = (Array.isArray(blog.faqs) ? blog.faqs : []).slice();
             const bodyEl = document.getElementById('articleBody');
