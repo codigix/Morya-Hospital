@@ -36,7 +36,8 @@ function build() {
     const lm = (/<lastmod>([^<]+)<\/lastmod>/.exec(m[1]) || [])[1];
     const pr = (/<priority>([^<]+)<\/priority>/.exec(m[1]) || [])[1] || '0.80';
     prevLastmod[loc] = lm;
-    const isBlog = loc.includes('/blog.html/') || loc.includes('blog-details.html');
+    const isBlog = loc.includes('/blog.html/') || loc.includes('/blog/') || loc.includes('blog-details.html');
+    if (/\/blog\.html\/[^\/]+\.html$/.test(loc)) prevLastmod[loc.replace(/\/blog\.html\/([^\/]+)\.html$/, '/blog/$1')] = lm; // same blog, new address
     const isIndex = loc.endsWith('/index.html'); // duplicate of "/"
     if (!isBlog && !isIndex) core.push({ loc, lm: lm || new Date().toISOString(), pr });
   }
@@ -48,7 +49,7 @@ function build() {
     const slug = String(b.slug || '').trim().replace(/\.html$/, '');
     if (!slug || seen.has(slug)) continue;
     seen.add(slug);
-    const loc = `${BASE}/blog.html/${encodeURIComponent(slug)}.html`;
+    const loc = `${BASE}/blog/${encodeURIComponent(slug)}`;
     blogEntries.push(entry(loc, b.lastmod || prevLastmod[loc] || toIso(b.date) || now, '0.64'));
   }
 

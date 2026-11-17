@@ -27,6 +27,7 @@ http.createServer((req, res) => {
   if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) {
     const m = p.match(/^\/([^\/]+)\.html$/);
     if (m && slugs().includes(m[1])) file = path.join(root, 'service-details.html');
+    else if (/^\/blog\/[^\/]+\/?$/.test(p)) file = path.join(root, 'blog-details.html');
     else if (/^\/blog\.html\/[^\/]+\.html$/.test(p)) file = path.join(root, 'blog-details.html');
     else { res.writeHead(404, { 'Content-Type': 'text/plain' }); return res.end('Cannot GET ' + p); }
   }

@@ -88,6 +88,43 @@
             color: #666;
         }
 
+        .blog-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .blog-count {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 30px;
+            background: #eef6fb;
+            border: 1px solid #cfe5f3;
+            color: #0b4f7c;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .blog-more {
+            text-align: center;
+            margin: 40px 0 10px;
+        }
+
+        .blog-more button {
+            padding: 12px 38px;
+            border: 0;
+            border-radius: 30px;
+            background: #0088cc;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .blog-more button:hover {
+            background: #006fa8;
+        }
+
         .spinner {
             border: 4px solid #f3f3f3;
             border-top: 4px solid #0088cc;
@@ -216,11 +253,15 @@
 
             <section class="service-wos cols">
                 <div class="container">
+                    <div class="blog-toolbar"><span class="blog-count" id="blogCount" style="display:none"></span></div>
                     <div class="blog-grid" id="blogGrid">
                         <div class="blog-loading">
                             <div class="spinner"></div>
                             Loading blogs from JSON...
                         </div>
+                    </div>
+                    <div class="blog-more" id="blogMore" style="display:none">
+                        <button type="button" id="blogMoreBtn">Load More</button>
                     </div>
                 </div>
             </section>
@@ -352,8 +393,12 @@
                         return;
                     }
 
-                    let cardsHtml = '';
-                    blogs.forEach(b => {
+                    const PAGE = 10;
+                    let shown = 0;
+                    const countEl = document.getElementById('blogCount');
+                    const moreWrap = document.getElementById('blogMore');
+                    const cardHtml = (b) => {
+                        let cardsHtml = '';
                         const targetSlug = b.slug ? b.slug.replace(/\.html$/, '') : b.id;
                         cardsHtml += `
                             <div class="blog-card">
@@ -370,9 +415,19 @@
                                 </div>
                             </div>
                         `;
-                    });
-
-                    grid.innerHTML = cardsHtml;
+                        return cardsHtml;
+                    };
+                    const renderMore = () => {
+                        const next = blogs.slice(shown, shown + PAGE);
+                        grid.insertAdjacentHTML('beforeend', next.map(cardHtml).join(''));
+                        shown += next.length;
+                        countEl.style.display = '';
+                        countEl.textContent = 'Total Blogs: ' + blogs.length + (shown < blogs.length ? ' (showing ' + shown + ')' : '');
+                        moreWrap.style.display = shown < blogs.length ? '' : 'none';
+                    };
+                    grid.innerHTML = '';
+                    renderMore();
+                    document.getElementById('blogMoreBtn').addEventListener('click', renderMore);
                 })
                 .catch(err => {
                     console.error('Failed to load blogs:', err);
@@ -384,7 +439,7 @@
         // Clean URL (/blog/slug) on the live server; Live Server/localhost has no rewrite, so use the query form there.
         function blogUrl(slug) {
             const local = ['localhost', '127.0.0.1'].includes(location.hostname) || location.protocol === 'file:';
-            return local ? 'blog-details.html?slug=' + encodeURIComponent(slug) : '/blog.html/' + encodeURIComponent(slug) + '.html';
+            return local ? 'blog-details.html?slug=' + encodeURIComponent(slug) : '/blog/' + encodeURIComponent(slug);
         }
         function escapeHtml(text) {
             if (!text) return '';
