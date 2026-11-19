@@ -25,6 +25,7 @@ function entry(loc, lastmod, priority) {
 
 function build() {
   const blogs = JSON.parse(fs.readFileSync(BLOGS, 'utf8'));
+  const blogSlugs = new Set(blogs.map(b => String(b.slug || '').trim().replace(/\.html$/, '').toLowerCase()));
   const old = fs.existsSync(SITEMAP) ? fs.readFileSync(SITEMAP, 'utf8') : '';
 
   // Keep core pages; remember previous lastmod of blog URLs
@@ -36,8 +37,9 @@ function build() {
     const lm = (/<lastmod>([^<]+)<\/lastmod>/.exec(m[1]) || [])[1];
     const pr = (/<priority>([^<]+)<\/priority>/.exec(m[1]) || [])[1] || '0.80';
     prevLastmod[loc] = lm;
-    const isBlog = loc.includes('/blog.html/') || loc.includes('/blog/') || loc.includes('blog-details.html');
-    if (/\/blog\.html\/[^\/]+\.html$/.test(loc)) prevLastmod[loc.replace(/\/blog\.html\/([^\/]+)\.html$/, '/blog/$1')] = lm; // same blog, new address
+    const pageSlug = ((/\/([^\/]+?)\.html\s*$/.exec(loc) || [])[1] || '').toLowerCase();
+    const isBlog = loc.includes('/blog.html/') || loc.includes('/blog/') || loc.includes('blog-details.html') || blogSlugs.has(pageSlug);
+    if (blogSlugs.has(pageSlug)) prevLastmod['blog:' + pageSlug] = lm; // keep each blog's previous lastmod
     const isIndex = loc.endsWith('/index.html'); // duplicate of "/"
     if (!isBlog && !isIndex) core.push({ loc, lm: lm || new Date().toISOString(), pr });
   }
@@ -49,8 +51,8 @@ function build() {
     const slug = String(b.slug || '').trim().replace(/\.html$/, '');
     if (!slug || seen.has(slug)) continue;
     seen.add(slug);
-    const loc = `${BASE}/blog/${encodeURIComponent(slug)}`;
-    blogEntries.push(entry(loc, b.lastmod || prevLastmod[loc] || toIso(b.date) || now, '0.64'));
+    const loc = `${BASE}/${encodeURIComponent(slug)}.html`;
+    blogEntries.push(entry(loc, b.lastmod || prevLastmod['blog:' + slug.toLowerCase()] || toIso(b.date) || now, '0.64'));
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

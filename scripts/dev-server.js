@@ -18,6 +18,11 @@ function slugs() {
   catch (e) { return []; }
 }
 
+function blogSlugs() {
+  try { return JSON.parse(fs.readFileSync(path.join(root, 'data/blogs.json'), 'utf8')).map(b => String(b.slug || b.id).toLowerCase()); }
+  catch (e) { return []; }
+}
+
 http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0]);
   if (p === '/') p = '/index.html';
@@ -27,7 +32,7 @@ http.createServer((req, res) => {
   if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) {
     const m = p.match(/^\/([^\/]+)\.html$/);
     if (m && slugs().includes(m[1])) file = path.join(root, 'service-details.html');
-    else if (/^\/blog\/[^\/]+\/?$/.test(p)) file = path.join(root, 'blog-details.html');
+    else if (m && blogSlugs().includes(m[1].toLowerCase())) file = path.join(root, 'blog-details.html');
     else if (/^\/blog\.html\/[^\/]+\.html$/.test(p)) file = path.join(root, 'blog-details.html');
     else { res.writeHead(404, { 'Content-Type': 'text/plain' }); return res.end('Cannot GET ' + p); }
   }

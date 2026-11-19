@@ -437,10 +437,10 @@
         });
 
 
-        // Clean URL (/blog/slug) on the live server; Live Server/localhost has no rewrite, so use the query form there.
+        // Address is /slug.html on the live server; Live Server/localhost has no rewrite, so use the query form there.
         function blogUrl(slug) {
             const local = ['localhost', '127.0.0.1'].includes(location.hostname) || location.protocol === 'file:';
-            return local ? 'blog-details.html?slug=' + encodeURIComponent(slug) : '/blog/' + encodeURIComponent(slug);
+            return local ? 'blog-details.html?slug=' + encodeURIComponent(slug) : '/' + encodeURIComponent(slug) + '.html';
         }
         function escapeHtml(text) {
             if (!text) return '';
